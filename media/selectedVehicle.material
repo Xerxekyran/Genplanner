@@ -1,0 +1,14 @@
+material selectedVehicle/system
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture system.bmp
+                filtering trilinear
+            }
+        }
+    }
+}

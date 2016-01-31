@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+	<title>config.xml</title>
+	<meta http-equiv="Content-Language" content="de" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<table cellspacing="0" cellpadding="0" border="0">
+	  <tr bgcolor="#000000">
+	    <td class="headline">Konfigurationen :: config.xml</td>		
+	  </<tr>
+	  <tr height="2px" bgcolor="#999999"><td></td></<tr>
+	  <tr  bgcolor="#1e8dff">
+	    <td>
+		<br />
+		Die "config.xml" dient der Konfiguration des Prototyps. Das &auml;ndern kann mit jedem beliebigen Texteditor vorgenommen werden.<br />
+		<br />
+		<table border="2">
+			<tr>
+				<td class="headline">Konfigurationselement</td>
+				<td class="headline">M&ouml;gliche Werte / Beschreibung</td>
+			</tr>		  
+			<tr>
+				<td>LogLevel</td>
+				<td>
+					M&ouml;gliche Werte: Debug, Info, Warn oder Error <br />
+					Diese Einstellung beeinflusst, welche Nachrichten in die Logdatei geschrieben werden. Wird beispielsweise Info eingetragen, so werden keine Debug Meldungen mehr gespeichert.
+				</td>
+			</tr>
+			<tr>
+				<td>LogFile</td>
+				<td>Der Dateiname, in den die Logeintr&auml;ge gespeichert werden sollen.</td>
+			</tr>		  
+			<tr>
+				<td>Language</td>
+				<td>
+					M&ouml;gliche Werte: en, de <br />
+					Dieser Wert gibt an, welche Sprache standardm&auml;&szlig;ig beim Starten des Prototyps genutzt werden soll.
+				</td>
+			</tr>
+			<tr>
+				<td>TravelCostWeight</td>
+				<td>Zahlenm&auml;&szlig;ige Gewichtung der Fahrtkosten f&uuml;r die Bewertung. H&ouml;here Werte bedeuten, dass der Algorithmus verst&auml;rkt versucht, die Gesamtstrecke der Touren zu minimieren.</td>
+			</tr>
+			<tr>
+				<td>VehicleLoadContraintWeight</td>
+				<td>Zahlenm&auml;&szlig;ige Gewichtung der Ladevolumen-Einhaltung f&uuml;r die Bewertung. H&ouml;here Werte bedeuten, dass der Algorithmus verst&auml;rkt versucht, die Ladevolumen der Fahrzeuge nicht zu &uuml;berschreiten.</td>
+			</tr>
+			<tr>
+				<td>TimeWindowConstraintWeight</td>
+				<td>Zahlenm&auml;&szlig;ige Gewichtung f&uuml;r das Einhalten von Kundenzeitfenstern bei der Bewertung. H&ouml;here Werte bedeuten, dass der Algorithmus verst&auml;rkt versucht, die Kundenzeitfenster bei der Tourenplanung einzuhalten.</td>
+			</tr>
+			<tr>
+				<td>WorkTimeConstraintWeight</td>
+				<td>Zahlenm&auml;&szlig;ige Gewichtung f&uuml;r das Einhalten von Arbeitszeiten der Mitarbeiter bei der Bewertung. H&ouml;here Werte bedeuten, dass der Algorithmus verst&auml;rkt versucht, die Arbeitszeiten bei der Tourenplanung einzuhalten.</td>
+			</tr>
+			<tr>
+				<td>TournamentSelctionTournamentRounds</td>
+				<td>Anzahl der "Runden" f&uuml;r das Turnierselektions-Verfahren. Standardm&auml;&szlig;ig wird nur eine Runde benutzt.</td>
+			</tr>
+			<tr>
+				<td>TournamentSelctionTournamentSize</td>
+				<td>Anzahl von L&ouml;sungsvorschl&auml;gen f&uuml;r die Turnierselektion. Diese werden zuf&auml;llig ausgew&auml;hlt. Die beiden bestbewerteten von den Turnierteilnehmern werden f&uuml;r die Rekombination benutzt.</td>
+			</tr>
+		</table>		
+		
+		
+		
+		<br />
+		</td>		
+	  </<tr>
+	</table>
+
+</body>
+
+</html>

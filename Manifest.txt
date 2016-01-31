@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: genplanner.core.Genplanner
+Class-Path: lib/jdom.jar lib/jgap.jar lib/charting-0.94.jar lib/trove-2.1.0.jar lib/org.ogre4j_1.6.2.jar lib/swt-3.4-win32-win32-x86.jar
+Created-By: Lars George

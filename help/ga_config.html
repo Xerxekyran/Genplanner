@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+	<title>ga_config.xml</title>
+	<meta http-equiv="Content-Language" content="de" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<table cellspacing="0" cellpadding="0" border="0">
+	  <tr bgcolor="#000000">
+	    <td class="headline">Konfigurationen :: Genetischer Algorithmus</td>		
+	  </<tr>
+	  <tr height="2px" bgcolor="#999999"><td></td></<tr>
+	  <tr  bgcolor="#1e8dff">
+	    <td>
+		<br />
+		Der Genetische Algorithmus kann &uuml;ber den Dialog konfiguriert werden, welcher nach der Auswahl eines Testfalls erscheint:<br />
+		<br />
+		<img src="images/config.png" /><br />
+			<i class="imgText">Konfigurationsdialog f&uuml;r den Genetischen Algorithmus</i><br />
+		
+		<br />
+		<table border="2">
+			<tr>
+				<td class="headline">Konfigurationselement</td>
+				<td class="headline">M&ouml;gliche Werte / Beschreibung</td>
+			</tr>		  
+			<tr>
+				<td>Initialisation method</td>
+				<td>Diese Einstellung entscheidet &uuml;ber das Initialisierungsverfahren.<br />
+					M&ouml;gliche Werte: 
+					<ul>
+						<li>Random: Eine zuf&auml;llige Initialisierung der Touren. Die Kunden werden gleichm&auml;&szlig;ig auf die zur verf&uuml;gung stehenden Fahrzeuge verteilt.</li>
+						<li>NearestFirst: Es wird zuf&auml;llig ein Kunde ausgew&auml;hlt und einem Fahrzeug zugeordnet. Anschlie&szlig;end werden geografisch in der n&auml;he liegende Kunden der Tour hinzugef&uuml;gt. Die Kunden werden gleichm&auml;&szlig;ig auf die zur verf&uuml;gung stehenden Fahrzeuge verteilt.</li>
+					</ul>						
+				</td>
+			</tr>
+			<tr>
+				<td>Selection operator</td>
+				<td>Diese Einstellung entscheidet &uuml;ber das Selektionsverfahren.<br />
+					M&ouml;gliche Werte: 
+					<ul>
+						<li>Random: Eine vollst&auml;ndig zuf&auml;llige Auswahl von L&ouml;sungsvorschl&auml;gen.</li>
+						<li>Tournament: Es werden zuf&auml;llig L&ouml;sungsvorschl&auml;ge ausgesucht (in der Datei config.xml ist die Anzahl einstellbar). Die besten zwei L&ouml;sungsvorschl&auml;ge werden genutzt.</li>
+					</ul>						
+				</td>
+			</tr>		  
+			<tr>
+				<td>Crossover operator</td>
+				<td>Diese Einstellung entscheidet &uuml;ber das Rekombinationsverfahren.<br />
+					M&ouml;gliche Werte: 
+					<ul>
+						<li>BCRC: Best Cost Route Crossover. Zwei Routen werden zuf&auml;llig ausgew&auml;hlt und im jeweils anderen Elternteil gel&ouml;scht. Die fehlenden Kunden werden dann entsprechend der Bewertungsfunktion an der besten Stelle wieder eingef&uuml;gt.</li>
+						<li>UOBX: Zwei L&ouml;sungen werden unter Verwendung einer zuf&auml;lligen Schablone rekombiniert.</li>
+					</ul>						
+				</td>
+			</tr>
+			<tr>
+				<td>Natural selection method</td>
+				<td>Diese Einstellung entscheidet &uuml;ber das Ersetzungsschema.<br />
+					M&ouml;gliche Werte: 
+					<ul>
+						<li>BestChromeSelector: Elitismus. Die besten L&ouml;sungen werden in die n&auml;chste Generation &uuml;bernommen.</li>
+						<li>WeightedRoulette: Jede L&ouml;sung erh&auml;lt eine seiner Bewertung proportionale Chance, in die n&auml;chste Generation &uuml;bernommen zu werden.</li>
+					</ul>						
+				</td>
+			</tr>
+			<tr>
+				<td>Population amount</td>
+				<td>Anzahl der gleichzeitig existierenden L&ouml;sungsvorschl&auml;ge. Diese bilden die Population und somit die genetische Vielfalt um neue L&ouml;sungen zu erzeugen.</td>
+			</tr>
+			<tr>
+				<td>Maximum of generations</td>
+				<td>Dies ist das Abbruchkriterium. Nach Erreichen der hier eingestellten Generation, wird der Algorithmus automatisch auf pausiert gestellt.</td>
+			</tr>
+		</table>		
+		
+		
+		
+		<br />
+		</td>		
+	  </<tr>
+	</table>
+
+</body>
+
+</html>

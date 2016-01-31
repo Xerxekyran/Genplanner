@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<genplanner_config>
+	<!-- 
+	*******************************************************************
+	*********************** [[ Logger ]] ******************************
+	******************************************************************* -->
+	<!-- Starting at which Level the logger should write the Messages 
+	into the File? Available: Debug, Info, Warn, Error -->
+	<LogLevel>Debug</LogLevel>
+	
+	<!-- The File for the logmessages (the logger uses HTML-Syntax)  -->
+	<LogFile>logfile.html</LogFile>
+	
+	<!-- 
+	*******************************************************************
+	*********************** [[ Language ]] ****************************
+	******************************************************************* -->
+	<!-- Which language should be used? available are: de, en -->
+	<Language>en</Language>
+	
+	<!-- 
+	*******************************************************************
+	*********************** [[ Algorithm ]] ***************************
+	******************************************************************* -->
+	
+	<!-- How high should the penalty be for travel costs. 
+	Higher values mean its more important for the plan calculation. -->
+	<TravelCostWeight>0.05</TravelCostWeight>
+	
+	<!-- How important is it to satisfy the vehicle capacity? 
+	Higher values mean its more important for the plan calculation. -->
+	<VehicleLoadContraintWeight>50</VehicleLoadContraintWeight>
+	
+	<!-- How important is it to satisfy the customer time windows? 
+	Higher values mean its more important for the plan calculation. -->
+	<TimeWindowConstraintWeight>25</TimeWindowConstraintWeight>
+	
+	<!-- How important is it to satisfy the work time limits for the employees? 
+	Higher values mean its more important for the plan calculation. -->
+	<WorkTimeConstraintWeight>0.05</WorkTimeConstraintWeight>
+	
+	<!-- The number of rounds for a TournamentSelection operator -->
+	<TournamentSelctionTournamentRounds>1</TournamentSelctionTournamentRounds>
+	
+	<!-- The size of the tournament for a TournamentSelection operator -->
+	<TournamentSelctionTournamentSize>3</TournamentSelctionTournamentSize>
+	
+</genplanner_config>

@@ -1,0 +1,104 @@
+material house1/system
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture system.bmp
+                filtering trilinear
+            }
+        }
+    }
+}
+
+material house1/roof1
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture color.bmp
+                filtering trilinear
+            }
+        }
+    }
+}
+
+material house1/gate_wall4
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture gate_wall4.jpg
+                filtering trilinear
+            }
+        }
+    }
+}
+
+material house1/stairs2
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture stairs2.jpg
+                filtering trilinear
+            }
+        }
+    }
+}
+
+material house1/wall7
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture wall7.jpg
+                filtering trilinear
+            }
+        }
+    }
+}
+
+material house1/gable2
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture gable2.jpg
+                filtering trilinear
+            }
+        }
+    }
+}
+
+material house1/bild4
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture color.bmp
+                filtering trilinear
+            }
+        }
+    }
+}

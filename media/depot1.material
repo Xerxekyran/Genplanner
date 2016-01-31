@@ -1,0 +1,44 @@
+material depot1/system
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture system.bmp
+                filtering trilinear
+            }
+        }
+    }
+}
+
+material depot1/gate_wall1
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture gate_wall1.jpg
+                filtering trilinear
+            }
+        }
+    }
+}
+
+material depot1/bild3
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture color.bmp
+                filtering trilinear
+            }
+        }
+    }
+}

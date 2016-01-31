@@ -1,0 +1,49 @@
+body
+{
+	font-family : Tahoma;
+	font-weight : bold;
+	font-size	: 11pt;
+	color 		: white;
+}
+
+img
+{
+	border : 0;
+}
+
+a.textlink
+{
+	color:	#DDDDDD;
+	text-decoration: underline;
+}
+
+a.textlink:hover
+{
+	color:	#FFFFFF;	
+}
+
+.imgText
+{
+	font-size : 9pt;
+}
+
+a 	
+{ 
+	color:	#000000;
+	text-decoration: none;
+}
+a:hover 
+{ 
+	color:	#1e8dff;
+}
+
+.headline
+{
+	font-size 	: 16pt;
+}
+
+table td
+{
+	padding-left : 10px;
+	padding-right : 10px;
+}
